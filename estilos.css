@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*notas*/
+
+.botonera {
+    width: 1897px;
+    height: 35px;
+    background-color: rgb(103, 45, 211);
+}
+.botonera a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#cabecera {
+    background-image: url(img/banner.webp);
+    width: 1897px;
+    height: 100px;
+}
+
+/*fuentes*/
+@font-face {
+    font-family:"montserrat-regular";
+    src: url(fuentes/Montserrat-Regular.ttf) format(truetype);
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"montserrat-light";
+    src: url(fuentes/Montserrat-Light.ttf);
+    font-weight:lighter;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "montserrat-italic";
+    src: url(fuentes/Montserrat-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+     font-family:"montserrat-bold";
+    src: url(fuentes/Montserrat-bold.ttf);
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"delius-regular" ;
+    src: url(fuentes/Delius-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "bungee-regular";
+    src: url(fuentes/Bungee-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "galindo-regular";
+    src: url(fuentes/Galindo-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*aplicaciones*/
+h1 {
+    font-family:"bungee-regular", sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    line-height: 4rem;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family:"delius-regular", sans-serif;
+    font-size: 20px;
+    color: #75147e;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+*{
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 15px;
+}
+
+body{
+    background-color: rgb(245, 241, 236);
+}
+
+main p {
+    font-size: 18 px;
+} 
+
+footer {
+    background-color: #c7c0ce;
+}
+
+#info{
+    background-image: url(img/acuarela.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#gradiente {
+    background: linear-gradient(120deg, #5d2e8b, transparent);
+}
