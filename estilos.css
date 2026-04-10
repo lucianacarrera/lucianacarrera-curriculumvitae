@@ -1,22 +1,6 @@
 @charset "utf-8";
 /*notas*/
 
-.botonera {
-    width: 1897px;
-    height: 35px;
-    background-color: rgb(103, 45, 211);
-}
-.botonera a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#cabecera {
-    background-image: url(img/banner.webp);
-    width: 1897px;
-    height: 100px;
-}
-
 /*fuentes*/
 @font-face {
     font-family:"montserrat-regular";
@@ -40,7 +24,7 @@
 }
 
 @font-face {
-     font-family:"montserrat-bold";
+    font-family:"montserrat-bold";
     src: url(fuentes/Montserrat-bold.ttf);
     font-weight:bold;
     font-style:normal;
@@ -99,6 +83,9 @@ ul {
 *{
     font-family: "montserrat-regular", sans-serif;
     font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -113,12 +100,67 @@ footer {
     background-color: #c7c0ce;
 }
 
+.botonera {
+    width: 1897px;
+    height: 35px;
+    background-color: rgb(103, 45, 211);
+}
+.botonera a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#cabecera {
+    width: 1897px;
+    height: 100px;
+}
+
 #info{
     background-image: url(img/acuarela.jpg);
     background-position: center;
     background-size: cover;
+    min-height: 16vh;
+    padding: 27px;
+    margin: 10px 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: violet;
+    border-style: solid;
 }
 
 #gradiente {
     background: linear-gradient(120deg, #5d2e8b, transparent);
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    font-family: 'delius-regular';
+}
+
+#yo {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        max-width: 800px;
+    }
+}
+
+#estudios {
+padding: 15px;
+}
+
+#habilidades {
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    padding: 7px 15px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
 }
