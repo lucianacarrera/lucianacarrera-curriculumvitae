@@ -11,21 +11,21 @@
 
 @font-face {
     font-family: "montserrat-light";
-    src: url(fuentes/Montserrat-Light.ttf);
+    src: url(fuentes/Montserrat-Light.ttf) format(truetype-variations); 
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
     font-family: "montserrat-italic";
-    src: url(fuentes/Montserrat-Italic.ttf);
+    src: url(fuentes/Montserrat-Italic.ttf) format(truetype-variations);
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "montserrat-bold";
-    src: url(fuentes/Montserrat-bold.ttf);
+    src: url(fuentes/Montserrat-bold.ttf) format(truetype-variations);
     font-weight: bold;
     font-style: normal;
 }
@@ -86,6 +86,7 @@ main {
     align-items: center;
     width: 100%;
 }
+
 p {
     font-size: 18px;
 }
@@ -101,21 +102,24 @@ nav {
     width: 100%;
     height: 35px;
     background-color: rgb(103, 45, 211);
-
-    a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    a:hover {
-        color: #a98cdf;
-        font-size: 15px;
-        font-family: "montserrat-bold";
-    }
 }
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #a98cdf;
+    font-size: 15px;
+    font-family: "montserrat-bold";
+}
+
 
 header {
     height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 article {
@@ -127,22 +131,23 @@ article {
     background-image: url(img/acuarelarosabajo.png);
     background-position: center;
     background-size: cover;
-    padding: 27px;
+    padding: 20px;
+    margin: 10px;
     width: inherit;
+}
 
-    h3 {
-        font-size: 17px;
-        margin: 10px 0px 5px;
-        color: #75147e9c;
-    }
+#estudios h3 {
+    font-size: 17px;
+    margin: 10px 0px 10px;
+    color: #75147e9c;
+}
 
-    p {
-        font-size: 15px;
-    }
+#estudios p {
+    font-size: 15px;
+}
 
-    li {
-        font-size: 15px;
-    }
+#estudios li {
+    font-size: 15px;
 }
 
 #info {
@@ -151,7 +156,7 @@ article {
     background-size: cover;
     min-height: 16vh;
     padding: 27px;
-    margin: 0px 0px 15px;
+    margin: 10px 0px 10px;
     border-left-width: 0;
     border-right-width: 0;
     border-color: #d795dd;
@@ -168,20 +173,20 @@ article {
 }
 
 #yo {
-    padding: 15px;
+    padding: 10px;
     border: #2500ff4d;
     border-radius: 33px;
     border-style: solid;
     max-width: 800px;
-    margin: 30px 0px 20px;
+    margin: 10px 0px 10px;
+}
 
-    h2 {
-        padding: 0px 0px 10px;
-    }
+#yo h2 {
+    padding: 0px 0px 10px;
+}
 
-    p {
-        font-size: 16px;
-    }
+#yo p {
+    font-size: 16px;
 }
 
 .gris {
@@ -192,24 +197,19 @@ article {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-
-    a {
-        font-size: 15px;
-        display: flex;
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    a:hover {
-        color: #a98cdf;
-        font-size: 15px;
-        font-family: "montserrat-bold";
-    }
 }
 
-.contenedor {
+.gris a {
+    font-size: 15px;
     display: flex;
-    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.gris a:hover {
+    color: #a98cdf;
+    font-size: 15px;
+    font-family: "montserrat-italic";
 }
 
 .foto {
@@ -218,15 +218,16 @@ article {
 
 #habilidades {
     margin: 5px 0px 30px;
-    h2 {
-        padding: 15px;
-    }
+}
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px 45px;
-        min-width: 220px;
-    }
-  
+#habilidades h2 {
+    padding: 15px;
+}
+
+#habilidades div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 45px;
+    min-width: 220px;
+}
