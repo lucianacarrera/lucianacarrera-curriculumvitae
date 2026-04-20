@@ -112,7 +112,7 @@ nav a {
 nav a:hover {
     color: #a98cdf;
     font-size: 15px;
-    font-family: "montserrat-bold";
+    font-weight: bold;
 }
 
 
@@ -125,7 +125,6 @@ header {
 article {
     margin: 10px;
 }
-
 
 #estudios {
     background-image: url(img/acuarelarosabajo.png);
@@ -178,7 +177,7 @@ article {
     border-radius: 33px;
     border-style: solid;
     max-width: 800px;
-    margin: 10px 0px 10px;
+    margin: 15px 0px 10px;
 }
 
 #yo h2 {
@@ -209,7 +208,7 @@ article {
 .gris a:hover {
     color: #a98cdf;
     font-size: 15px;
-    font-family: "montserrat-italic";
+    font-style: italic;
 }
 
 .foto {
