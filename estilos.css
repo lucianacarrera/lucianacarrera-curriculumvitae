@@ -1,59 +1,37 @@
 @charset "utf-8";
-/*notas*/
 
 /*fuentes*/
 @font-face {
-    font-family: "montserrat-regular";
-    src: url(fuentes/Montserrat-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "montserrat-light";
-    src: url(fuentes/Montserrat-Light.ttf) format(truetype-variations); 
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "montserrat-italic";
-    src: url(fuentes/Montserrat-Italic.ttf) format(truetype-variations);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "montserrat-bold";
-    src: url(fuentes/Montserrat-bold.ttf) format(truetype-variations);
+    font-family: "capriola-regular";
+    src: url(fuentes/Capriola-Regular.ttf) format(truetype-variations);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "delius-regular";
-    src: url(fuentes/Delius-Regular.ttf) format(truetype);
+    font-family: "afacadflux-bold";
+    src: url(fuentes/AfacadFlux-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "afacadflux-regular";
+    src: url(fuentes/AfacadFlux-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "bungee-regular";
-    src: url(fuentes/Bungee-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "galindo-regular";
-    src: url(fuentes/Galindo-Regular.ttf) format(truetype);
-    font-weight: normal;
+    font-family: "afacadfluz-light";
+    src: url(fuentes/AfacadFlux-Light.ttf) format(truetype);
+    font-weight: lighter;
     font-style: normal;
 }
 
 /*aplicaciones*/
 h1 {
-    font-family: "bungee-regular", sans-serif;
+    font-family: "capriola-regular", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 50px;
     line-height: 4rem;
@@ -117,7 +95,7 @@ nav a:hover {
 
 
 header {
-    height: 100px;
+    padding: 10px 0px 30px;
     display: flex;
     align-items: center;
 }
@@ -189,8 +167,7 @@ article {
 }
 
 .gris {
-    height: 135px;
-    padding: 20px;
+    padding: 30px 0px 40px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -229,4 +206,10 @@ article {
     justify-content: center;
     gap: 15px 45px;
     min-width: 220px;
+}
+
+.nombre {
+    background-color: #724E96;
+    padding:10px;
+    border-radius: 40px;
 }
