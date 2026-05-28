@@ -1,17 +1,11 @@
 @charset "utf-8";
 
 /*fuentes*/
-@font-face {
-    font-family: "capriola-regular";
-    src: url(fuentes/Capriola-Regular.ttf) format(truetype-variations);
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: "afacadflux-bold";
-    src: url(fuentes/AfacadFlux-Bold.ttf) format(truetype);
-    font-weight: bold;
+    font-family: "capriola";
+    src: url(fuentes/Capriola-Regular.ttf) format(truetype);
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -19,19 +13,26 @@
     font-family: "afacadflux-regular";
     src: url(fuentes/AfacadFlux-Regular.ttf) format(truetype);
     font-weight: normal;
-    font-style: normal;
+    font-size: normal;
 }
 
 @font-face {
-    font-family: "afacadfluz-light";
+    font-family: "afacadflux-bold";
+    src: url(fuentes/AfacadFlux-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "afacadflux-light";
     src: url(fuentes/AfacadFlux-Light.ttf) format(truetype);
     font-weight: lighter;
-    font-style: normal;
+    font-size: normal;
 }
 
 /*aplicaciones*/
 h1 {
-    font-family: "capriola-regular", sans-serif;
+    font-family: "capriola", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 50px;
     line-height: 4rem;
@@ -39,13 +40,13 @@ h1 {
 }
 
 h2 {
-    font-family: "delius-regular", sans-serif;
+    font-family: "afacadflux-regular", sans-serif;
     font-size: 24px;
     color: #75147e;
 }
 
 * {
-    font-family: "montserrat-regular", sans-serif;
+    font-family: "afacadflux-regular", sans-serif;
     font-size: 15px;
     margin: 0;
     padding: 0;
@@ -146,7 +147,7 @@ article {
     padding: 15px;
     font-size: 20px;
     color: white;
-    font-family: 'delius-regular';
+    font-family: "afacadflux-regular";
 }
 
 #yo {
