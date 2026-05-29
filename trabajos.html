@@ -7,11 +7,15 @@
     <title>Primer TP</title>
     <link rel="stylesheet" href="estilos.css" type="text/css">
     <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
+
 </head>
 
 <body>
     <header>
-        <img class="foto" src="img/logoj.jpg" alt="foto de perfil" width="90" height="90" />
+        <a href="index.html">
+            <img class="foto" src="img/logoj.jpg" alt="foto de perfil" width="90" height="90" />
+        </a>
         <nav>
             <a href="sobre-mi.html" target="_self">Sobre mi</a>
             <a href="Trabajos.html" target="_self">Trabajos</a>
@@ -20,13 +24,99 @@
         </nav>
     </header>
 
-    <main>
+    <main id="maintrabajos">
+        <section><h1>Fotografía</h1></section>
         <section>
-            <h1>Fotografía</h1>
-            <article>
-                <h3>Deportes</h3>
-            </article>
+            <h3>Deportes</h3>
+            <div id="galeriafotografia">
+                <a href="img/js/deporte1.jpg" data-fancybox="gallerydeportes" data-caption="Fotografía padel">
+                    <img src="img/js/thumbnails/deporte1thumbnail.jpg" alt="Fotografía padel" />
+                </a>
+
+                <a href="img/js/deporte2.jpg" data-fancybox="gallerydeportes" data-caption="Fotografía padel">
+                    <img src="img/js/thumbnails/deporte2thumbnail.jpg" alt="Fotografía padel" />
+                </a>
+
+                <a href="img/js/deporte4.jpg" data-fancybox="gallerydeportes" data-caption="Fotografía padel">
+                    <img src="img/js/thumbnails/deporte4thumbnail.jpg" alt="Fotografía padel" />
+                </a>
+
+                <a href="img/js/deporte5.jpg" data-fancybox="gallerydeportes" data-caption="Fotografía padel">
+                    <img src="img/js/thumbnails/deporte5thumbnail.jpg" alt="Fotografía padel" />
+                </a>
+
+                <a href="img/js/deporte6.jpeg" data-fancybox="gallerydeportes" data-caption="Fotografía padel">
+                    <img src="img/js/thumbnails/deporte6thumbnail.jpg" alt="Fotografía padel" />
+                </a>
+
+
+                <a href="img/js/deporte7.jpg" data-fancybox="gallerydeportes" data-caption="Fotografía fútbol">
+                    <img src="img/js/thumbnails/deporte7thumbnail.jpg" alt="Fotografía fútbol" />
+                </a>
+            </div>
         </section>
+
+        <section>
+
+            <h3>Alimentos</h3>
+            <div id="galeriaalimentos">
+                <a href="img/js/alimentos1.jpg" data-fancybox="galleryalimentos" data-caption="Fotografía hamburguesa">
+                    <img src="img/js/thumbnails/alimentos1thumbnail.jpg" alt="Fotografía hamburguesa" />
+                </a>
+
+                <a href="img/js/alimentos2.JPG" data-fancybox="galleryalimentos" data-caption="Fotografía helado">
+                    <img src="img/js/thumbnails/alimentos2thumbnail.jpg" alt="Fotografía helado" />
+                </a>
+
+                <a href="img/js/alimentos3.jpg" data-fancybox="galleryalimentos" data-caption="Fotografía hamburguesa">
+                    <img src="img/js/thumbnails/alimentos3thumbnail.jpg" alt="Fotografía hamburguesa" />
+                </a>
+
+                <a href="img/js/alimentos4.JPG" data-fancybox="galleryalimentos" data-caption="Fotografía helado">
+                    <img src="img/js/thumbnails/alimentos4thumbnail.jpg" alt="Fotografía helado" />
+                </a>
+
+                <a href="img/js/alimentos5.jpg" data-fancybox="galleryalimentos" data-caption="Fotografía hamburguesa">
+                    <img src="img/js/thumbnails/alimentos5thumbnail.jpg" alt="Fotografía hamburguesa" />
+                </a>
+
+                <a href="img/js/alimentos6.JPG" data-fancybox="galleryalimentos" data-caption="Fotografía helado">
+                    <img src="img/js/thumbnails/alimentos6thumbnail.jpg" alt="Fotografía helado" />
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h3>Random</h3>
+            <div id="galeriarandom">
+                <a href="img/js/random1.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
+                    <img src="img/js/thumbnails/random1thumbnail.jpg" alt="Fotografía Ortuzar" />
+                </a>
+
+                <a href="img/js/random2.jpg" data-fancybox="galleryrandom" data-caption="Fotografía dragón">
+                    <img src="img/js/thumbnails/random2thumbnail.jpg" alt="Fotografía dragón" />
+                </a>
+
+                <a href="img/js/random3.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
+                    <img src="img/js/thumbnails/random3thumbnail.jpg" alt="Fotografía Ortuzar" />
+                </a>
+
+                <a href="img/js/random4.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
+                    <img src="img/js/thumbnails/random4thumbnail.jpg" alt="Fotografía Ortuzar" />
+                </a>
+
+                <a href="img/js/random5.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
+                    <img src="img/js/thumbnails/random5thumbnail.jpg" alt="Fotografía Ortuzar" />
+                </a>
+
+                <a href="img/js/random6.JPG" data-fancybox="gallery" data-caption="Fotografía Ortuzar">
+                    <img src="img/js/thumbnails/random6thumbnail.jpg" alt="Fotografía Ortuzar" />
+                </a>
+
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
@@ -43,6 +133,9 @@
             </li>
         </ul>
     </footer>
+
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
 </body>
 
 </html>
