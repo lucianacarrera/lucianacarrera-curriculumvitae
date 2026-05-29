@@ -265,6 +265,39 @@ h3 {
 }
 
 /*contacto*/
+
+#maincontacto{
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--violeta-oscuro);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+label{
+    display: block;
+}
+
 input {
+    width: 100%;
+    height: 30px;
     background-color: var(--lila);
+    margin-bottom: 5px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto;
+    height: auto;
 }

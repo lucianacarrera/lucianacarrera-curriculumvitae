@@ -22,39 +22,45 @@
         </nav>
     </header>
 
-    <main>
-<h1>Contacto</h1>
-<p>*Campos obligatorios</p>
-<form method="post" action="" target="_blank" enctype="text/plain">
-    <label for="Nombre:">Nombre</label>
-    <input type="text" name="*Nombre" id="Nombre" maxlength="40" placeholder="El.: Catalina" required>
+    <main id="maincontacto">
+        <h1>Contacto</h1>
+        <p>*Campos obligatorios</p>
+        <form method="post" action="mailto:lucianacarrera2605@gmail.comsubject=Hola%luciana" target="_blank" enctype="text/plain">
+            <label for="Nombre:">Nombre</label>
+            <input type="text" name="*Nombre" id="Nombre" maxlength="40" placeholder="Ej.: Catalina" required>
 
-    <label for="Email">Email: </label> 
-    <input type="email" name="*Email" id="Email" required>
+            <label for="Email">Email: </label>
+            <input type="email" name="*Email" id="Email" required>
 
-    <label for="Edad">Edad</label>
-    <input type="number" min="18" max="100" name="Edad" id="Edad">
+            <label for="Edad">Edad</label>
+            <input type="number" min="18" max="100" name="Edad" id="Edad">
 
-    <label for="Fecha">Fecha de nacimiento</label>
-    <input type="date" name="Nacimiento" id="nacimiento">
+            <label for="Fecha">Fecha de nacimiento</label>
+            <input type="date" name="Nacimiento" id="nacimiento">
 
-    <p>Sexo:</p>
-<label for="Sexo">Femenino <input type="radio" name="Sexo" value="Femenino" id="Femenino"></label>
-<label for="Sexo">Masculino <input type="radio" name="Sexo" value="Masculino" id="Masculino"></label>
-<label for="Sexo">No binario <input type="radio" name="Sexo" value="No binario" id="No binario"></label>
+            <p>Sexo:</p>
+            <label for="Sexo">Femenino <input type="radio" name="Sexo" value="Femenino" id="Femenino"></label>
+            <label for="Sexo">Masculino <input type="radio" name="Sexo" value="Masculino" id="Masculino"></label>
+            <label for="Sexo">No binario <input type="radio" name="Sexo" value="No binario" id="No binario"></label>
 
-<p>Intereses:</p>
-<label for="Intereses">Fotografía<input type="checkbox" name="Intereses" value="Fotografía" id="Fotografía"></label>
-<label for="Intereses">Diseño<input type="checkbox" name="Intereses" value="Diseño" id="Diseño"></label>
-<label for="Intereses">Bordados<input type="checkbox" name="Intereses" value="Bordados" id="Bordados"></label>
-<label for="Intereses">Edición<input type="checkbox" name="Intereses" value="Edición" id="Edición"></label>
+            <p>Intereses:</p>
+            <label for="Intereses">Fotografía<input type="checkbox" name="Intereses" value="Fotografía"
+                    id="Fotografía"></label>
+            <label for="Intereses">Diseño<input type="checkbox" name="Intereses" value="Diseño" id="Diseño"></label>
+            <label for="Intereses">Bordados<input type="checkbox" name="Intereses" value="Bordados"
+                    id="Bordados"></label>
+            <label for="Intereses">Edición<input type="checkbox" name="Intereses" value="Edición" id="Edición"></label>
 
-<label for="Teléfono">Teléfono:</label>
-<input type="tel" name="Teléfono" id="Teléfono" placeholder="(ooo)0000-0000"
+            <label for="Teléfono">Teléfono:</label>
+            <input type="tel" name="Teléfono" id="Teléfono" placeholder="(000)0000-0000">
 
+            <label for="Mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
 
-    <input type="submit"
-</form>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+
+        </form>
     </main>
 
     <footer>
@@ -66,8 +72,7 @@
             </li>
             <li>
                 <img src="img/gmailvioleta.png" alt="g-mail" width="32" height="25">
-                <a href="mailto:lucianacarrera2605@gmail.com
-                subject=Hola%luciana" target="_top">Gmail</a>
+                <a href="mailto:lucianacarrera2605@gmail.comsubject=Hola%luciana" target="_top">Gmail</a>
             </li>
         </ul>
     </footer>
