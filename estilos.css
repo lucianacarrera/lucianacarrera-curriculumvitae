@@ -43,13 +43,13 @@
 h1 {
     font-family: "capriola", sans-serif;
     color: var(--crema);
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 2px;
     background-color: var(--violeta-oscuro);
     border-radius: 30px;
     padding: 5px 20px 5px 20px;
     display: inline-block;
-    width: fit-content;
+    max-width: 400px;
 }
 
 h2 {
@@ -262,4 +262,9 @@ li {
 h3 {
     margin: 20px 0 5px 0;
 }
+}
+
+/*contacto*/
+input {
+    background-color: var(--lila);
 }
