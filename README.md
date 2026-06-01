@@ -1,4 +1,4 @@
-# Preentrega - Curriculum Vitae Digital
+# Entrega tp3- Curriculum Vitae Digital
 Resolución de pantalla: 1280x720px
 
 Editor de código: Visual Estudio Code
