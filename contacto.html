@@ -6,12 +6,13 @@
     <title>Sobre Mi</title>
     <link rel="stylesheet" href="estilos.css" type="text/css">
     <link rel="icon" href="img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img class="foto" src="img/logoj.jpg" alt="foto de perfil" width="90" height="90" />
+            <img class="foto" src="img/logo.png" alt="" width="90" height="90" />
         </a>
         <nav>
             <a href="sobre-mi.html" target="_self">Sobre mi</a>
@@ -22,44 +23,62 @@
         </nav>
     </header>
 
+
     <main id="maincontacto">
         <h1>Contacto</h1>
         <p>*Campos obligatorios</p>
-        <form method="post" action="mailto:lucianacarrera2605@gmail.comsubject=Hola%luciana" target="_blank" enctype="text/plain">
-            <label for="Nombre:">Nombre</label>
-            <input type="text" name="*Nombre" id="Nombre" maxlength="40" placeholder="Ej.: Catalina" required>
-
-            <label for="Email">Email: </label>
-            <input type="email" name="*Email" id="Email" required>
-
-            <label for="Edad">Edad</label>
-            <input type="number" min="18" max="100" name="Edad" id="Edad">
-
-            <label for="Fecha">Fecha de nacimiento</label>
-            <input type="date" name="Nacimiento" id="nacimiento">
-
-            <p>Sexo:</p>
-            <label for="Sexo">Femenino <input type="radio" name="Sexo" value="Femenino" id="Femenino"></label>
-            <label for="Sexo">Masculino <input type="radio" name="Sexo" value="Masculino" id="Masculino"></label>
-            <label for="Sexo">No binario <input type="radio" name="Sexo" value="No binario" id="No binario"></label>
-
-            <p>Intereses:</p>
-            <label for="Intereses">Fotografía<input type="checkbox" name="Intereses" value="Fotografía"
-                    id="Fotografía"></label>
-            <label for="Intereses">Diseño<input type="checkbox" name="Intereses" value="Diseño" id="Diseño"></label>
-            <label for="Intereses">Bordados<input type="checkbox" name="Intereses" value="Bordados"
-                    id="Bordados"></label>
-            <label for="Intereses">Edición<input type="checkbox" name="Intereses" value="Edición" id="Edición"></label>
-
-            <label for="Teléfono">Teléfono:</label>
-            <input type="tel" name="Teléfono" id="Teléfono" placeholder="(000)0000-0000">
-
-            <label for="Mensaje">Mensaje</label>
-            <textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
-
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
-
+        <form method="post" action="mailto:lucianacarrera2605@gmail.comsubject=Hola%luciana" target="_blank"
+            enctype="text/plain">
+            <div>
+                <label for="Nombre:">*Nombre</label>
+                <input type="text" name="*Nombre" id="Nombre" maxlength="40" placeholder="Ej.: Catalina" required>
+            </div>
+            <div>
+                <label for="Email">*Email: </label>
+                <input type="email" name="*Email" id="Email" placeholder="Ej.: Catalinatripo@gmail.com" required>
+            </div>
+            <label for="Edad">*Edad</label>
+            <input type="number" min="18" max="100" name="Edad" placeholder="Ej.: 30" id="Edad">
+            <div>
+                <label for="Fecha">Fecha de nacimiento</label>
+                <input type="date" name="Nacimiento" id="nacimiento">
+            </div>
+            <div>
+                <p>Sexo:</p>
+                <div class="radio">
+                    <label for="Sexo">Femenino <input type="radio" name="Sexo" value="Femenino" id="Femenino"></label>
+                    <label for="Sexo">Masculino <input type="radio" name="Sexo" value="Masculino"
+                            id="Masculino"></label>
+                    <label for="Sexo">No binario <input type="radio" name="Sexo" value="No binario"
+                            id="No binario"></label>
+                </div>
+            </div>
+            <div>
+                <p>Intereses:</p>
+                <div class="checkbox">
+                    <label for="Intereses">Fotografía<input type="checkbox" name="Intereses" value="Fotografía"
+                            id="Fotografía"></label>
+                    <label for="Intereses">Diseño<input type="checkbox" name="Intereses" value="Diseño"
+                            id="Diseño"></label>
+                    <label for="Intereses">Bordados<input type="checkbox" name="Intereses" value="Bordados"
+                            id="Bordados"></label>
+                    <label for="Intereses">Edición<input type="checkbox" name="Intereses" value="Edición"
+                            id="Edición"></label>
+                </div>
+            </div>
+            <div>
+                <label for="Teléfono">Teléfono:</label>
+                <input type="tel" name="Teléfono" id="Teléfono" placeholder="(000)0000-0000">
+            </div>
+            <div>
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="Mensaje" id="Mensaje" maxlength="400"></textarea>
+            </div>
+            <div>
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+            </div>
+            <!--tuve que poner a todos dentro de divs para acomodarlos como quería-->
         </form>
     </main>
 
@@ -77,4 +96,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
