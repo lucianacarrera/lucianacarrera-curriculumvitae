@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Primer TP</title>
+    <title>Trabajos</title>
     <link rel="stylesheet" href="estilos.css" type="text/css">
-    <link rel="icon" href="img/logo.jpg">
+    <link rel="icon" href="img/logoj.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
 
@@ -15,7 +15,7 @@
 <body>
     <header>
         <a href="index.html">
-            <img class="foto" src="img/logoj.jpg" alt="foto de perfil" width="90" height="90" />
+            <img class="foto" src="img/logo.png" alt="logo" width="90" height="90" />
         </a>
         <nav>
             <a href="sobre-mi.html" target="_self">Sobre mi</a>
@@ -26,7 +26,9 @@
     </header>
 
     <main id="maintrabajos">
-        <section><h1>Fotografía</h1></section>
+        <section>
+            <h1>Fotografía</h1>
+        </section>
         <section>
             <h3>Deportes</h3>
             <div>
@@ -89,54 +91,58 @@
         <section>
             <h3>Random</h3>
             <div>
-                <a href="img/js/random1.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
+                <a href="img/js/random1.jpg" data-fancybox="galleryrandom"
+                    data-caption="Fotografía para festival (Ortuzar)">
                     <img src="img/js/thumbnails/random1thumbnail.jpg" alt="Fotografía Ortuzar" />
                 </a>
 
-                <a href="img/js/random2.jpg" data-fancybox="galleryrandom" data-caption="Fotografía dragón">
+                <a href="img/js/random2.jpg" data-fancybox="galleryrandom" data-caption="Fotografía desfile Disney">
                     <img src="img/js/thumbnails/random2thumbnail.jpg" alt="Fotografía dragón" />
                 </a>
 
-                <a href="img/js/random3.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
-                    <img src="img/js/thumbnails/random3thumbnail.jpg" alt="Fotografía Ortuzar" />
+                <a href="img/js/random3.jpg" data-fancybox="galleryrandom" data-caption="Fotografía pinza">
+                    <img src="img/js/thumbnails/random3thumbnail.jpg" alt="Fotografía pinza" />
                 </a>
 
-                <a href="img/js/random4.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
-                    <img src="img/js/thumbnails/random4thumbnail.jpg" alt="Fotografía Ortuzar" />
+                <a href="img/js/random4.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Mickey Mouse">
+                    <img src="img/js/thumbnails/random4thumbnail.jpg" alt="Fotografía Mickey Mouse" />
                 </a>
 
-                <a href="img/js/random5.jpg" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
-                    <img src="img/js/thumbnails/random5thumbnail.jpg" alt="Fotografía Ortuzar" />
+                <a href="img/js/random5.jpg" data-fancybox="galleryrandom" data-caption="Fotografía exterior">
+                    <img src="img/js/thumbnails/random5thumbnail.jpg" alt="Fotografía exterior" />
                 </a>
 
-                <a href="img/js/random6.JPG" data-fancybox="gallery" data-caption="Fotografía Ortuzar">
+                <a href="img/js/random6.JPG" data-fancybox="galleryrandom" data-caption="Fotografía Ortuzar">
                     <img src="img/js/thumbnails/random6thumbnail.jpg" alt="Fotografía Ortuzar" />
                 </a>
-
             </div>
         </section>
-
-
     </main>
 
     <footer>
         <ul class="gris">
             <li>
-                <img src="img/instagramvioleta.png" alt="instagram" width="25" height="25">
                 <a href="http://www.instagram.com/lulic_design?igsh=MWIyaWJsNm51OXBpMw==" target="_blank"
-                    rel="noopener noreferrer">Instagram</a>
+                    rel="noopener noreferrer">
+                    <img class="ignormal" src="img/instagramvioleta.png" alt="instagram" width="25" height="25">
+                    <img class="ighover" src="img/instagramhover.png" alt="instagram" width="25" height="25">
+                    Instagram
+                </a>
             </li>
             <li>
-                <img src="img/gmailvioleta.png" alt="g-mail" width="32" height="25">
-                <a href="mailto:lucianacarrera2605@gmail.com
-                subject=Hola%luciana" target="_top">Gmail</a>
-            </li>
+                <a href="mailto:lucianacarrera2605@gmail.com?subject=Hola%luciana" target="_top"
+                    rel="noopener noreferrer">
+                    <img class="gmnormal" src="img/gmailvioleta.png" alt="g-mail" width="25" height="25">
+                    <img class="gmhover" src="img/gmailhover.png" alt="g-mail" width="25" height="25">
+                    Gmail
+                </a>
+            </li> 
         </ul>
     </footer>
 
+    <a href="#" class="botonarriba">↑</a>
     <script src="lightbox/jquery.min.js"></script>
     <script src="lightbox/jquery.fancybox.js"></script>
-    <a href="#" class="botonarriba">↑</a>
 </body>
 
 </html>

@@ -118,10 +118,6 @@ footer {
     margin: 40px 0 0 0;
 }
 
-article {
-    margin: 10px;
-}
-
 .gris {
     padding: 20px 0 20px 0;
     display: flex;
@@ -149,6 +145,20 @@ article {
     font-style: italic;
 }
 
+.ighover, .gmhover {
+    display: none;
+}
+
+.gris a:hover .ignormal,
+.gris a:hover .gmnormal {
+    display: none;
+}
+
+.gris a:hover .ighover,
+.gris a:hover .gmhover {
+    display: block;
+}
+
 :root {
     --crema: #fbf6ff;
     --violeta-oscuro: #724E96;
@@ -174,7 +184,6 @@ article {
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
-
 
 @keyframes cambiatrama {
     0% {
@@ -237,29 +246,18 @@ article {
     }
 }
 
-
-
 .videos {
     display: flex;
     flex-direction: row;
     max-width: 1255px;
     justify-content: space-between;
     padding: 50px 0 0 0;
-
-    div {
-        display: flex;
-        flex-direction: column;
-    }
-
     video {
         border-radius: 40px;
     }
 }
 
-
-
 /*sobre-mi.html*/
-
 #mainsobremi {
     gap: 400px;
     background-image: url(img/trama1.png);
@@ -334,7 +332,6 @@ article {
 #maintrabajos {
     display: flex;
     flex-direction: column;
-
     div {
         display: flex;
         flex-wrap: wrap;
@@ -342,7 +339,6 @@ article {
         padding: 10px 0px 10px 0px;
         gap: 10px;
     }
-
     h3 {
         margin: 20px 0 5px 0;
     }
@@ -372,7 +368,6 @@ article {
 }
 
 /*contacto*/
-
 #maincontacto {
     display: flex;
     flex-direction: column;
@@ -384,27 +379,13 @@ article {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in;
-
     h1 {
         margin: 0 0 20px 0;
     }
-
     p {
         margin: 0 0 10px 0;
     }
 }
-
-
-@keyframes cambiatrama {
-    0% {
-        background-image: url(img/trama1.png);
-    }
-
-    100% {
-        background-image: url(img/trama2.png);
-    }
-}
-
 
 form {
     width: 100%;
@@ -450,11 +431,29 @@ textarea {
     background-color: var(--footer);
 }
 
+
 @media screen and (max-width: 500px) {
+
 
     nav {
         height: auto;
         padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    main {
+        padding: 0 30px;
+    }
+
+
+    /*index.html_media500px*/
+    #mainindex {
+        animation-name: none;
     }
 
     #infopersonal {
@@ -464,10 +463,8 @@ textarea {
     }
 
     .imagenpersonal {
-        flex-direction: row;
         justify-content: space-between;
         gap: 20px;
-
         img {
             width: 45%;
             height: auto;
@@ -480,31 +477,68 @@ textarea {
         gap: 20px;
     }
 
-    .botoncv {
-        font-size: 18px;
-        padding: 8px 20px;
-        margin: 20px 0;
-    }
-
-    #mainindex {
-        animation-name: none;
-        padding: 0 20px;
-    }
-
     .nombre {
-        h1 {
-            background-size: 40%;
-        }
-        p {
-            margin: 20px 0;
-        }
         div {
             padding: 10px 0;
         }
-        }
-    
-    footer {
+    }
+
+    /*sobre-mi.html_media500px*/
+    #mainsobremi {
+        animation-name: none;
+        background-size: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .estudios {
+        article {
+            margin: 20px 0;
         }
     }
+
+    /*trabajos.html_media500px*/
+    #maintrabajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            justify-content: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+        
+        h1 {
+        text-align: center;
+    }
+    }
+
+    .botonarriba {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    /*contacto.html_media500px*/
+    #maincontacto {
+        background-size: 300px;
+        background-position: bottom;
+        animation-name: cambiatrama;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+    }
+
+    form {
+        margin: 0 0 300px 0;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
